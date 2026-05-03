@@ -1,0 +1,158 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 440px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.auth-logo-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.4));
+}
+
+.auth-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+.auth-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.auth-form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: -0.25rem;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-secondary);
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.input-field.with-icon {
+  padding-left: 2.75rem;
+  width: 100%;
+}
+
+.input-field:focus + .input-icon,
+.input-wrapper:focus-within .input-icon {
+  color: var(--accent-color);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.auth-submit {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.85rem;
+  font-size: 1.1rem;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.auth-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.auth-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* Role Selector specific to register */
+.role-selector {
+  margin-top: 0.5rem;
+}
+
+.role-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.role-card {
+  flex: 1;
+  border: 1px solid var(--glass-border);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--text-secondary);
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.4);
+}
+
+.role-card input[type="radio"] {
+  display: none;
+}
+
+.role-card:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.role-card.active {
+  border-color: var(--accent-color);
+  background: rgba(59, 130, 246, 0.15);
+  color: white;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+.role-icon {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.role-card.active .role-icon {
+  color: var(--accent-color);
+}
