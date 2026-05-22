@@ -1,16 +1,47 @@
-# React + Vite
+CEMS Elite – Course Enrollment Management System (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CEMS Elite is the frontend application for a Course Enrollment Management System that provides a clean, responsive, and role-based user interface for Students and Instructors.
 
-Currently, two official plugins are available:
+The frontend consumes REST APIs from the backend to manage authentication, course enrollment, and user interactions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Core Features
+- Role-based user interface for Students and Instructors
+- Secure login and authentication flow
+- Course listing and enrollment interface
+- Enrollment status and course progress tracking
+- Certificate access upon course completion
+- Responsive and modern UI design
 
-## React Compiler
+Technology Stack
+- React
+- Vite
+- JavaScript
+- Axios
+- Framer Motion
+- React Hot Toast
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend Architecture
+- Component-based UI structure
+- API-driven data flow
+- State management using React hooks
+- Clear separation of UI and API logic
 
-## Expanding the ESLint configuration
+Project Structure
+- src/components
+- src/pages
+- src/services
+- src/hooks
+- src/assets
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Running the Frontend
+- Install Node.js (v18 or above)
+- Install dependencies using npm install
+- Start the application using npm run dev
+
+Backend Dependency
+- This frontend depends on the backend repository for data and authentication
+- All sensitive logic and validation are handled server-side
+- Frontend focuses on presentation and user interaction
+
+Purpose
+This frontend was developed as part of a full-stack project to demonstrate frontend development skills, UI design, and backend API integration 
